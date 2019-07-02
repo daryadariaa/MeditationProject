@@ -2,7 +2,7 @@
 //  UIView + Extension.swift
 //  Vipassana
 //
-//  Created by Dasha Chastokolenko on 4/12/19.
+//  Created by Dasha Chastokolenko on 5/20/19.
 //  Copyright © 2019 Dasha Chastokolenko. All rights reserved.
 //
 
@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 extension UIView {
+    
     func setGradientBackground(colorOne: UIColor, colorTwo: UIColor) {
         
         let gradientLayer = CAGradientLayer()

@@ -2,9 +2,10 @@
 //  VipassanaButton.swift
 //  Vipassana
 //
-//  Created by Dasha Chastokolenko on 3/28/19.
+//  Created by Dasha Chastokolenko on 5/12/19.
 //  Copyright © 2019 Dasha Chastokolenko. All rights reserved.
 //
+
 
 import UIKit
 

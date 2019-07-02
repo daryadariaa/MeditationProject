@@ -1,3 +1,11 @@
+//
+//  MacawChartView.swift
+//  Vipassana
+//
+//  Created by Dasha Chastokolenko on 5/16/19.
+//  Copyright © 2019 Dasha Chastokolenko. All rights reserved.
+//
+
 import Foundation
 import Macaw
 
@@ -38,7 +46,7 @@ class MacawChartView: MacawView {
             items.append(Text(text: "\(i*1)", fill: Color(val: 0xfc7600),  align: .max, baseline: .mid, place: .move(dx: -10, dy: y)))
         }
         items.append(createBars(button))
-        items.append(Line(x1: 0, y1: 185, x2: 400, y2: 185).stroke(fill: Color(val: 0xfc7600)))
+        items.append(Line(x1: 0, y1: 200, x2: 400, y2: 200).stroke(fill: Color(val: 0xfc7600)))
         items.append(Line(x1: 0, y1: -120, x2: 0, y2: 200).stroke(fill: Color(val: 0xfc7600)))
         return Group(contents: items, place: .move(dx: 50, dy: 200))
     }

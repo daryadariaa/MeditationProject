@@ -9,5 +9,10 @@ target 'Vipassana' do
  pod 'SSCircularSlider'
  pod 'Charts'
  pod 'lottie-ios'
+ pod 'Macaw', '0.9.5'
+ pod 'Firebase'
+pod 'Firebase/Auth' 
+pod 'Firebase/Database'
+pod 'SVProgressHUD'
 
 end

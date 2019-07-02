@@ -2,7 +2,7 @@
 //  MoodRatingVC.swift
 //  Vipassana
 //
-//  Created by Dasha Chastokolenko on 4/12/19.
+//  Created by Dasha Chastokolenko on 5/20/19.
 //  Copyright © 2019 Dasha Chastokolenko. All rights reserved.
 //
 
@@ -15,15 +15,21 @@ class MoodRatingVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        moodView.setGradientBackground(colorOne: UIColor(rgb: 0x10C38D), colorTwo: UIColor(rgb: 0x11AAC3))
+        
         moodTableView.dataSource = self
-        //moodTableView.delegate = self
+    }
+    
+    @IBAction func continuePressed(_ sender: UIBarButtonItem) {
+        let mainstoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        guard let moodSliderController = mainstoryBoard.instantiateViewController(
+            withIdentifier: "\(MoodSliderVC.self)") as? MoodSliderVC else { return }
+        navigationController?.pushViewController(moodSliderController, animated: true)
     }
 }
 
 extension MoodRatingVC: UITableViewDataSource {
     
-    // MARK: - UITableViewDataSource
+    // MARK: - Table view data source
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableView.allowsSelection = false
@@ -43,7 +49,7 @@ extension MoodRatingVC: UITableViewDataSource {
             cell.textLabel?.textColor = UIColor.black
         }
         if indexPath.row == 1 {
-            cell.imageView?.image = UIImage(named: "breath")
+            cell.imageView?.image = UIImage(named: "mood_screenshot")
             cell.imageView?.contentMode = .scaleAspectFill
         }
         if indexPath.row == 2 {

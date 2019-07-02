@@ -2,12 +2,15 @@
 //  AppDelegate.swift
 //  Vipassana
 //
-//  Created by Dasha Chastokolenko on 03/27/19.
+//  Created by Dasha Chastokolenko on 5/10/19.
 //  Copyright © 2019 Dasha Chastokolenko. All rights reserved.
 //
 
+
 import UIKit
 import AVFoundation
+import Firebase
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,9 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        FirebaseApp.configure()
         UIApplication.shared.isIdleTimerDisabled = true
         return true
     }
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

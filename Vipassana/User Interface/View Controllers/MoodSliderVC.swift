@@ -2,12 +2,15 @@
 //  MoodSliderVC.swift
 //  Vipassana
 //
-//  Created by Dasha Chastokolenko on 4/15/19.
+//  Created by Dasha Chastokolenko on 5/20/19.
 //  Copyright © 2019 Dasha Chastokolenko. All rights reserved.
 //
 
 import UIKit
 import SSCircularSlider
+
+
+var timeArray: [String] = []
 
 class MoodSliderVC: UIViewController {
     
@@ -16,13 +19,16 @@ class MoodSliderVC: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var moodLabel: UILabel!
     
+    
     let arrValues: [Int] = [Int](0...10)
     var indexOfValue = 0
-    var arr: [Int] = [Int]()
     var textOutput = ""
+    var arr: [Int] = [Int]()
+    var array: [Double] = [Double]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         moodView.setGradientBackground(colorOne: UIColor(rgb: 0x10C38D), colorTwo: UIColor(rgb: 0x11AAC3))
         sliderView.setArrayValues(labelValues: arrValues, currentIndex: indexOfValue)
         sliderView.delegate = self
@@ -30,30 +36,42 @@ class MoodSliderVC: UIViewController {
         label.textColor = UIColor.black
         moodLabel.textColor = UIColor.black
         moodLabel.textAlignment = .center
+        sliderView.setEndPointsImage(startPointImage: UIImage(named: "sad")!, endPointImage: UIImage(named: "happy1")!)
     }
     
-    @IBAction func doneButtonTapped(_ sender: UIBarButtonItem) {
-        var dict: [String : Int] = [:]
+    //MARK:- Actions
+    
+    @IBAction func saveButtonTapped(_ sender: UIButton) {
+        
         let moodValue = arr[arr.endIndex - 1]
         let timestamp = Date().timeIntervalSince1970
         let time = Date(timeIntervalSince1970: timestamp)
         let formatter = DateFormatter()
         formatter.dateFormat = "dd MMM HH:mm"
         let date = formatter.string(from: time)
-        dict = [date : moodValue]
+        timeArray.append(date.description)
+        array.append(Double(moodValue))
+        
+        
         
         let defaults = UserDefaults.standard
-        defaults.set(dict, forKey: "Mood values")
+        defaults.set(timeArray, forKey: "ArrayOfDates")
         
-        for (key, value) in dict {
-            print("Date: \(key), mood value: \(value)")
-        }
+        defaults.set(array, forKey: "ArrayOfMoodValues")
+        
+        let array = UserDefaults.standard.array(forKey: "ArrayOfDates") ?? [String]()
+        let array_ = UserDefaults.standard.array(forKey: "ArrayOfMoodValues") ?? [Double]()
+        print(array_)
+        print(array)
+        print(moodValue)
     }
 }
 
 
 extension MoodSliderVC: SSCircularRingSliderDelegate {
+    
     func controlValueUpdated(value: Int) {
+        
         arr.append(value)
         
         switch value {
@@ -75,3 +93,4 @@ extension MoodSliderVC: SSCircularRingSliderDelegate {
         }
     }
 }
+

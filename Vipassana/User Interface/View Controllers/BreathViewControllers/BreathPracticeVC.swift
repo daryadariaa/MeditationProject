@@ -2,7 +2,7 @@
 //  BreathPracticeVC.swift
 //  Vipassana
 //
-//  Created by Dasha Chastokolenko on 4/8/19.
+//  Created by Dasha Chastokolenko on 5/22/19.
 //  Copyright © 2019 Dasha Chastokolenko. All rights reserved.
 //
 
@@ -27,7 +27,7 @@ class BreathPracticeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         UserDefaults.standard.register(defaults: [BreatheInTimeKey:3,
                                                   PauseTimeAfterBreathInKey:1,
                                                   BreatheOutTimeKey: 4,
@@ -58,22 +58,22 @@ class BreathPracticeVC: UIViewController {
         let breathViewWidth = borderView.frame.size.width - 2 * breatheViewPadding
         
         fullBreathViewFrame = CGRect(x: breatheViewPadding,
-                                    y: breatheViewPadding,
-                                    width: breathViewWidth,
-                                    height: borderView.frame.size.height - 2 * breatheViewPadding)
+                                     y: breatheViewPadding,
+                                     width: breathViewWidth,
+                                     height: borderView.frame.size.height - 2 * breatheViewPadding)
         
         emptyBreathViewFrame = CGRect(x: borderView.frame.size.width / 2,
-                                     y: borderView.frame.size.height / 2,
-                                     width: 0,
-                                     height: 0)
+                                      y: borderView.frame.size.height / 2,
+                                      width: 0,
+                                      height: 0)
         
         startBreathingAnimation()
     }
     
     func startBreathingAnimation() {
-        stopBreathingAnimation()    // Breath bar begins from the bottom
+        stopBreathingAnimation()
         breathView.isHidden = false
-        expand(afterDelay: 0)                    // Initial expansion starts immediately
+        expand(afterDelay: 0)
     }
     
     func stopBreathingAnimation() {

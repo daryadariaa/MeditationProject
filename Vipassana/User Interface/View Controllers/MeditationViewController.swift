@@ -1,11 +1,3 @@
-//
-//  MeditationViewController.swift
-//  Vipassana
-//
-//  Created by Dasha Chastokolenko on 3/26/19.
-//  Copyright © 2019 Dasha Chastokolenko. All rights reserved.
-//
-
 import UIKit
 
 class MeditationViewController: UIViewController, TrackDelegate {
@@ -37,7 +29,7 @@ class MeditationViewController: UIViewController, TrackDelegate {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
     
     func runMeditation(trackLevel: Int, totalDurationSeconds: Int) {

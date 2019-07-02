@@ -1,14 +1,10 @@
-//
-//  ViewController.swift
-//  Vipassana
-//
-//  Created by Dasha Chastokolenko on 3/26/19.
-//  Copyright © 2019 Dasha Chastokolenko. All rights reserved.
-//
-
 import UIKit
+import HealthKit
 
 class ViewController: UIViewController {
+    
+    let healthStore = HKHealthStore()
+    let mindfulType = HKObjectType.categoryType(forIdentifier: .mindfulSession)
     
     let vipassanaManager = VipassanaManager.shared
     let trackTemplateFactory = TrackTemplateFactory.shared
@@ -17,12 +13,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var timerButton: UIButton!
     @IBOutlet weak var totalMeditationTimeLabel: UILabel!
-    // @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.activateHealthKit()
+        self.saveMindfullAnalysis()
         
         self.titleLabel.text = "Meditate"
         let trackCount = trackTemplateFactory.trackTemplates.count
@@ -61,6 +59,51 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    func activateHealthKit() {
+
+        let typestoRead = Set([
+            HKObjectType.categoryType(forIdentifier: HKCategoryTypeIdentifier.mindfulSession)!
+            ])
+
+        let typestoShare = Set([
+            HKObjectType.categoryType(forIdentifier: HKCategoryTypeIdentifier.mindfulSession)!
+            ])
+
+        self.healthStore.requestAuthorization(toShare: typestoShare, read: typestoRead) { (success, error) -> Void in
+            if !success{
+                print("HealthKit Auth error\(String(describing: error))")
+            }
+        }
+    }
+    
+    
+    func saveMindfullAnalysis() {
+
+        _ = vipassanaManager.user.totalSecondsInMeditation / 60
+
+        let startDate = Date()
+        let endDate = startDate.addingTimeInterval(1.0 * 60.0 * 60.0)
+
+        if let mindfullType = HKObjectType.categoryType(forIdentifier: .mindfulSession) {
+
+            let mindfullSample = HKCategorySample(type: mindfullType, value: 0, start: startDate, end: endDate)
+
+            healthStore.save(mindfullSample, withCompletion: { (success, error) -> Void in
+
+                if error != nil { return }
+
+                if success {
+                    print("My new data was saved in HealthKit")
+
+                } else {
+                    return
+                }
+            })
+        }
+    }
+    
+    
     
     override var prefersStatusBarHidden: Bool {
         return true

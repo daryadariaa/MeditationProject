@@ -1,3 +1,11 @@
+//
+//  WorkoutTypesTVC.swift
+//  Vipassana
+//
+//  Created by Dasha Chastokolenko on 5/21/19.
+//  Copyright © 2019 Dasha Chastokolenko. All rights reserved.
+//
+
 import UIKit
 
 class WorkoutTypesTVC: UITableViewController {
@@ -44,6 +52,14 @@ class WorkoutTypesTVC: UITableViewController {
                 cell.textLabel?.text = "Rate your mood"
                 cell.textLabel?.font = UIFont.init(name: "CoffeeService", size: 34)
                 cell.textLabel?.textAlignment = NSTextAlignment.center
+            }
+            
+            if indexPath.row == 3 {
+                cell.isSelected = false
+            }
+            
+            if indexPath.row == 4 {
+                cell.isSelected = false
             }
             
             return cell

@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1403C667225D281D005DAAFE /* WorkoutTypesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403C666225D281D005DAAFE /* WorkoutTypesTVC.swift */; };
+		1403DC302260FCBD00CC4B22 /* ExtensionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403DC2F2260FCBD00CC4B22 /* ExtensionHelper.swift */; };
+		14058AA422A5475100BD6F37 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14058AA322A5475100BD6F37 /* HealthKit.framework */; };
+		14575C8B2267438800AC6FE0 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14575C8A2267438800AC6FE0 /* IndicatorView.swift */; };
+		146082222260D70700A2E8EF /* MoodRatingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146082212260D70700A2E8EF /* MoodRatingVC.swift */; };
+		146082242260E06300A2E8EF /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146082232260E06300A2E8EF /* UIView + Extension.swift */; };
+		146082262260E3C400A2E8EF /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146082252260E3C400A2E8EF /* UIColor + Extension.swift */; };
+		1495388922C2587000A1BE76 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1495388822C2587000A1BE76 /* GoogleService-Info.plist */; };
+		14995F7322C8F90500B1B9A1 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14995F7022C8F90500B1B9A1 /* LogInVC.swift */; };
+		14995F7422C8F90500B1B9A1 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14995F7122C8F90500B1B9A1 /* RegistrationVC.swift */; };
+		14995F7522C8F90500B1B9A1 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14995F7222C8F90500B1B9A1 /* WelcomeVC.swift */; };
+		14995F7B22C8F9E700B1B9A1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14995F7A22C8F9E700B1B9A1 /* HomeVC.swift */; };
+		14995F8122CBAB5800B1B9A1 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14995F8022CBAB5800B1B9A1 /* File.swift */; };
+		14A20911225BCA9500AA9BD5 /* bell_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A20910225BCA9500AA9BD5 /* bell_sound.mp3 */; };
+		14A20913225BCD4200AA9BD5 /* BriefMindfulnessPractice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A20912225BCD4200AA9BD5 /* BriefMindfulnessPractice.mp3 */; };
+		14A20915225BCE1400AA9BD5 /* 3MinuteBreathing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A20914225BCE1400AA9BD5 /* 3MinuteBreathing.mp3 */; };
+		14A20917225BCE1A00AA9BD5 /* 5MinuteBreathing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A20916225BCE1A00AA9BD5 /* 5MinuteBreathing.mp3 */; };
+		14A20919225BCF0100AA9BD5 /* BodyScan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A20918225BCF0100AA9BD5 /* BodyScan.mp3 */; };
+		14A2091B225BCF0900AA9BD5 /* 4MinuteBodyScan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A2091A225BCF0900AA9BD5 /* 4MinuteBodyScan.mp3 */; };
+		14A2091D225BCFB600AA9BD5 /* SittingMeditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A2091C225BCFB600AA9BD5 /* SittingMeditation.mp3 */; };
+		14A2091F225BD0A200AA9BD5 /* CompleteMeditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A2091E225BD0A200AA9BD5 /* CompleteMeditation.mp3 */; };
+		14A20921225BD1F600AA9BD5 /* MindfulYoga.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A20920225BD1F600AA9BD5 /* MindfulYoga.mp3 */; };
+		14A20923225BD2F300AA9BD5 /* CompassionateBreath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A20922225BD2F300AA9BD5 /* CompassionateBreath.mp3 */; };
+		14A20925225BD37100AA9BD5 /* MountainMeditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A20924225BD37100AA9BD5 /* MountainMeditation.mp3 */; };
+		14A20927225BD37800AA9BD5 /* MountainMeditation2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A20926225BD37700AA9BD5 /* MountainMeditation2.mp3 */; };
+		14A20929225BD41400AA9BD5 /* 5MinuteJustBells.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A20928225BD41400AA9BD5 /* 5MinuteJustBells.mp3 */; };
+		14A2092B225BD42500AA9BD5 /* 10MinuteJustBells.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A2092A225BD42500AA9BD5 /* 10MinuteJustBells.mp3 */; };
+		14A20931225BE58300AA9BD5 /* BreathVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A20930225BE58300AA9BD5 /* BreathVC.swift */; };
+		14A20933225BE6B900AA9BD5 /* BreathPracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A20932225BE6B900AA9BD5 /* BreathPracticeVC.swift */; };
+		14A20935225BFB3E00AA9BD5 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A20934225BFB3E00AA9BD5 /* SettingsVC.swift */; };
+		14A746202264EF7000DCED75 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 14A745382264EF7000DCED75 /* LICENSE */; };
+		14A746212264EF7000DCED75 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7453B2264EF7000DCED75 /* Extentions.swift */; };
+		14A746222264EF7000DCED75 /* SSCircularRingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7453C2264EF7000DCED75 /* SSCircularRingSlider.swift */; };
+		14A746232264EF7000DCED75 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A7453E2264EF7000DCED75 /* Media.xcassets */; };
+		14A746242264EF7000DCED75 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 14A7453F2264EF7000DCED75 /* README.md */; };
+		14A746BB2265054A00DCED75 /* DateValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A746BA2265054A00DCED75 /* DateValueFormatter.swift */; };
+		14ACBEB022949B220045527E /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACBEAF22949B220045527E /* ChartViewController.swift */; };
+		14ACBEB422949BFB0045527E /* MacawChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACBEB322949BFB0045527E /* MacawChartView.swift */; };
+		14E3F8EC2264D8790008324A /* MoodSliderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E3F8EB2264D8790008324A /* MoodSliderVC.swift */; };
+		4630ECF51FE70CA50066D5E5 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4630ECF41FE70CA50066D5E5 /* Track.swift */; };
+		4630ECF71FE712350066D5E5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4630ECF61FE712350066D5E5 /* User.swift */; };
+		4630ECFA1FE713E70066D5E5 /* VipassanaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4630ECF91FE713E70066D5E5 /* VipassanaManager.swift */; };
+		4663D591201503ED00CE7E83 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4663D590201503ED00CE7E83 /* MeditationViewController.swift */; };
+		46C1BCE920164ACD00824ECE /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46C1BCE820164ACC00824ECE /* SF-Pro-Text-Semibold.otf */; };
+		46DA82672015165E00BA875D /* FONT-DINER-Coffee-Service.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46DA82662015165D00BA875D /* FONT-DINER-Coffee-Service.otf */; };
+		46DA826B20151ED700BA875D /* VipassanaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA826A20151ED700BA875D /* VipassanaButton.swift */; };
+		46E6CB491FE6EA3200F09C38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E6CB481FE6EA3200F09C38 /* AppDelegate.swift */; };
+		46E6CB4B1FE6EA3200F09C38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E6CB4A1FE6EA3200F09C38 /* ViewController.swift */; };
+		46E6CB4E1FE6EA3200F09C38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E6CB4C1FE6EA3200F09C38 /* Main.storyboard */; };
+		46E6CB501FE6EA3200F09C38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E6CB4F1FE6EA3200F09C38 /* Assets.xcassets */; };
+		46E6CB531FE6EA3200F09C38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E6CB511FE6EA3200F09C38 /* LaunchScreen.storyboard */; };
+		46FD68DB1FE8545800427F9C /* TrackTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD68DA1FE8545800427F9C /* TrackTemplate.swift */; };
+		46FD68DD1FE8546300427F9C /* TrackTemplateFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD68DC1FE8546300427F9C /* TrackTemplateFactory.swift */; };
+		D7E5B640A52B67283DD8547B /* Pods_Vipassana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D351D51736672EA823AA45 /* Pods_Vipassana.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46E6CB5A1FE6EA3200F09C38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46E6CB3D1FE6EA3200F09C38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46E6CB441FE6EA3200F09C38;
+			remoteInfo = Vipassana;
+		};
+		46E6CB651FE6EA3200F09C38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46E6CB3D1FE6EA3200F09C38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46E6CB441FE6EA3200F09C38;
+			remoteInfo = Vipassana;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1403C666225D281D005DAAFE /* WorkoutTypesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTypesTVC.swift; sourceTree = "<group>"; };
+		1403DC2F2260FCBD00CC4B22 /* ExtensionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelper.swift; sourceTree = "<group>"; };
+		14058AA322A5475100BD6F37 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		14575C8A2267438800AC6FE0 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		146082212260D70700A2E8EF /* MoodRatingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MoodRatingVC.swift; path = ../MoodRatingVC.swift; sourceTree = "<group>"; };
+		146082232260E06300A2E8EF /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		146082252260E3C400A2E8EF /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		1495388822C2587000A1BE76 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		14995F7022C8F90500B1B9A1 /* LogInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		14995F7122C8F90500B1B9A1 /* RegistrationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
+		14995F7222C8F90500B1B9A1 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		14995F7A22C8F9E700B1B9A1 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		14995F8022CBAB5800B1B9A1 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		14A20910225BCA9500AA9BD5 /* bell_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bell_sound.mp3; path = ../../../../../Guest/MeditationAudio/bell_sound.mp3; sourceTree = "<group>"; };
+		14A20912225BCD4200AA9BD5 /* BriefMindfulnessPractice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = BriefMindfulnessPractice.mp3; path = ../../../../../Guest/MeditationAudio/BriefMindfulnessPractice.mp3; sourceTree = "<group>"; };
+		14A20914225BCE1400AA9BD5 /* 3MinuteBreathing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 3MinuteBreathing.mp3; path = ../../../../../Guest/MeditationAudio/3MinuteBreathing.mp3; sourceTree = "<group>"; };
+		14A20916225BCE1A00AA9BD5 /* 5MinuteBreathing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 5MinuteBreathing.mp3; path = ../../../../../Guest/MeditationAudio/5MinuteBreathing.mp3; sourceTree = "<group>"; };
+		14A20918225BCF0100AA9BD5 /* BodyScan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = BodyScan.mp3; path = ../../../../../Guest/MeditationAudio/BodyScan.mp3; sourceTree = "<group>"; };
+		14A2091A225BCF0900AA9BD5 /* 4MinuteBodyScan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 4MinuteBodyScan.mp3; path = ../../../../../Guest/MeditationAudio/4MinuteBodyScan.mp3; sourceTree = "<group>"; };
+		14A2091C225BCFB600AA9BD5 /* SittingMeditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SittingMeditation.mp3; path = ../../../../../Guest/MeditationAudio/SittingMeditation.mp3; sourceTree = "<group>"; };
+		14A2091E225BD0A200AA9BD5 /* CompleteMeditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = CompleteMeditation.mp3; path = ../../../../../Guest/MeditationAudio/CompleteMeditation.mp3; sourceTree = "<group>"; };
+		14A20920225BD1F600AA9BD5 /* MindfulYoga.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = MindfulYoga.mp3; path = ../../../../../Guest/MeditationAudio/MindfulYoga.mp3; sourceTree = "<group>"; };
+		14A20922225BD2F300AA9BD5 /* CompassionateBreath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = CompassionateBreath.mp3; path = ../../../../../Guest/MeditationAudio/CompassionateBreath.mp3; sourceTree = "<group>"; };
+		14A20924225BD37100AA9BD5 /* MountainMeditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = MountainMeditation.mp3; path = ../../../../../Guest/MeditationAudio/MountainMeditation.mp3; sourceTree = "<group>"; };
+		14A20926225BD37700AA9BD5 /* MountainMeditation2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = MountainMeditation2.mp3; path = ../../../../../Guest/MeditationAudio/MountainMeditation2.mp3; sourceTree = "<group>"; };
+		14A20928225BD41400AA9BD5 /* 5MinuteJustBells.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 5MinuteJustBells.mp3; path = ../../../../../Guest/MeditationAudio/5MinuteJustBells.mp3; sourceTree = "<group>"; };
+		14A2092A225BD42500AA9BD5 /* 10MinuteJustBells.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 10MinuteJustBells.mp3; path = ../../../../../Guest/MeditationAudio/10MinuteJustBells.mp3; sourceTree = "<group>"; };
+		14A20930225BE58300AA9BD5 /* BreathVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathVC.swift; sourceTree = "<group>"; };
+		14A20932225BE6B900AA9BD5 /* BreathPracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathPracticeVC.swift; sourceTree = "<group>"; };
+		14A20934225BFB3E00AA9BD5 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		14A745382264EF7000DCED75 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		14A7453B2264EF7000DCED75 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		14A7453C2264EF7000DCED75 /* SSCircularRingSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCircularRingSlider.swift; sourceTree = "<group>"; };
+		14A7453E2264EF7000DCED75 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		14A7453F2264EF7000DCED75 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		14A746BA2265054A00DCED75 /* DateValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValueFormatter.swift; sourceTree = "<group>"; };
+		14ACBEAF22949B220045527E /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		14ACBEB322949BFB0045527E /* MacawChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacawChartView.swift; sourceTree = "<group>"; };
+		14ADF6912285A27A00C9FE94 /* Vipassana.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vipassana.entitlements; sourceTree = "<group>"; };
+		14E3F8EB2264D8790008324A /* MoodSliderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MoodSliderVC.swift; path = ../MoodSliderVC.swift; sourceTree = "<group>"; };
+		17D351D51736672EA823AA45 /* Pods_Vipassana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vipassana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E501EDB7E8BB0BC2037E2BA /* Pods-VipassanaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VipassanaUITests.debug.xcconfig"; path = "Target Support Files/Pods-VipassanaUITests/Pods-VipassanaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		445DC16CB26190C66591027D /* Pods-Vipassana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vipassana.release.xcconfig"; path = "Target Support Files/Pods-Vipassana/Pods-Vipassana.release.xcconfig"; sourceTree = "<group>"; };
+		4630ECF41FE70CA50066D5E5 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		4630ECF61FE712350066D5E5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4630ECF91FE713E70066D5E5 /* VipassanaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipassanaManager.swift; sourceTree = "<group>"; };
+		4663D590201503ED00CE7E83 /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MeditationViewController.swift; path = ../MeditationViewController.swift; sourceTree = "<group>"; };
+		46C1BCE820164ACC00824ECE /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		46DA82662015165D00BA875D /* FONT-DINER-Coffee-Service.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FONT-DINER-Coffee-Service.otf"; sourceTree = "<group>"; };
+		46DA826A20151ED700BA875D /* VipassanaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VipassanaButton.swift; path = "../User Interface/VipassanaButton.swift"; sourceTree = "<group>"; };
+		46E6CB451FE6EA3200F09C38 /* Vipassana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vipassana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E6CB481FE6EA3200F09C38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46E6CB4A1FE6EA3200F09C38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		46E6CB4D1FE6EA3200F09C38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46E6CB4F1FE6EA3200F09C38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46E6CB521FE6EA3200F09C38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46E6CB541FE6EA3200F09C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46E6CB591FE6EA3200F09C38 /* VipassanaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VipassanaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E6CB641FE6EA3200F09C38 /* VipassanaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VipassanaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46FD68DA1FE8545800427F9C /* TrackTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTemplate.swift; sourceTree = "<group>"; };
+		46FD68DC1FE8546300427F9C /* TrackTemplateFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTemplateFactory.swift; sourceTree = "<group>"; };
+		61ADE9A07E209704A393B431 /* Pods-Vipassana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vipassana.debug.xcconfig"; path = "Target Support Files/Pods-Vipassana/Pods-Vipassana.debug.xcconfig"; sourceTree = "<group>"; };
+		7E49E02B7C63CCEC257D7EC8 /* Pods_VipassanaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VipassanaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DAE4CC8989545BBC6992C7 /* Pods_VipassanaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VipassanaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46E6CB421FE6EA3200F09C38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E5B640A52B67283DD8547B /* Pods_Vipassana.framework in Frameworks */,
+				14058AA422A5475100BD6F37 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E6CB561FE6EA3200F09C38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E6CB611FE6EA3200F09C38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1403DC2C2260FB8500CC4B22 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				14995F6F22C8F8D900B1B9A1 /* WelcomeViewControllers */,
+				14ACBEAC229499F40045527E /* MoodChart */,
+				14ADF6902285A1A900C9FE94 /* MeditationViewControllers */,
+				14ADF68F2285A16D00C9FE94 /* RateMoodViewControllers */,
+				14ADF68E22859E6900C9FE94 /* BreathViewControllers */,
+				14A745372264EF7000DCED75 /* SSCircularSlider */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		14575C8122673D9100AC6FE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46E6CB511FE6EA3200F09C38 /* LaunchScreen.storyboard */,
+				46E6CB4C1FE6EA3200F09C38 /* Main.storyboard */,
+				46DA826A20151ED700BA875D /* VipassanaButton.swift */,
+				14575C8A2267438800AC6FE0 /* IndicatorView.swift */,
+				14ACBEB322949BFB0045527E /* MacawChartView.swift */,
+				14995F8022CBAB5800B1B9A1 /* File.swift */,
+			);
+			name = View;
+			path = Vipassana/View;
+			sourceTree = SOURCE_ROOT;
+		};
+		14995F6F22C8F8D900B1B9A1 /* WelcomeViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				14995F7022C8F90500B1B9A1 /* LogInVC.swift */,
+				14995F7122C8F90500B1B9A1 /* RegistrationVC.swift */,
+				14995F7A22C8F9E700B1B9A1 /* HomeVC.swift */,
+				14995F7222C8F90500B1B9A1 /* WelcomeVC.swift */,
+			);
+			path = WelcomeViewControllers;
+			sourceTree = "<group>";
+		};
+		14A745372264EF7000DCED75 /* SSCircularSlider */ = {
+			isa = PBXGroup;
+			children = (
+				14A745382264EF7000DCED75 /* LICENSE */,
+				14A745392264EF7000DCED75 /* SSCircularSlider */,
+				14A7453F2264EF7000DCED75 /* README.md */,
+			);
+			path = SSCircularSlider;
+			sourceTree = "<group>";
+		};
+		14A745392264EF7000DCED75 /* SSCircularSlider */ = {
+			isa = PBXGroup;
+			children = (
+				14A7453A2264EF7000DCED75 /* SSCircularRingSlider */,
+			);
+			path = SSCircularSlider;
+			sourceTree = "<group>";
+		};
+		14A7453A2264EF7000DCED75 /* SSCircularRingSlider */ = {
+			isa = PBXGroup;
+			children = (
+				14A7453B2264EF7000DCED75 /* Extentions.swift */,
+				14A7453C2264EF7000DCED75 /* SSCircularRingSlider.swift */,
+				14A7453D2264EF7000DCED75 /* Media */,
+			);
+			path = SSCircularRingSlider;
+			sourceTree = "<group>";
+		};
+		14A7453D2264EF7000DCED75 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				14A7453E2264EF7000DCED75 /* Media.xcassets */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		14ACBEAC229499F40045527E /* MoodChart */ = {
+			isa = PBXGroup;
+			children = (
+				14ACBEAF22949B220045527E /* ChartViewController.swift */,
+			);
+			path = MoodChart;
+			sourceTree = "<group>";
+		};
+		14ADF68E22859E6900C9FE94 /* BreathViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				14A20932225BE6B900AA9BD5 /* BreathPracticeVC.swift */,
+				14A20930225BE58300AA9BD5 /* BreathVC.swift */,
+				14A20934225BFB3E00AA9BD5 /* SettingsVC.swift */,
+			);
+			path = BreathViewControllers;
+			sourceTree = "<group>";
+		};
+		14ADF68F2285A16D00C9FE94 /* RateMoodViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				146082212260D70700A2E8EF /* MoodRatingVC.swift */,
+				14E3F8EB2264D8790008324A /* MoodSliderVC.swift */,
+			);
+			path = RateMoodViewControllers;
+			sourceTree = "<group>";
+		};
+		14ADF6902285A1A900C9FE94 /* MeditationViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1403C666225D281D005DAAFE /* WorkoutTypesTVC.swift */,
+				46E6CB4A1FE6EA3200F09C38 /* ViewController.swift */,
+				4663D590201503ED00CE7E83 /* MeditationViewController.swift */,
+			);
+			path = MeditationViewControllers;
+			sourceTree = "<group>";
+		};
+		4630ECF31FE70C7B0066D5E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4630ECF41FE70CA50066D5E5 /* Track.swift */,
+				4630ECF61FE712350066D5E5 /* User.swift */,
+				46FD68DA1FE8545800427F9C /* TrackTemplate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4630ECF81FE713CB0066D5E5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4630ECF91FE713E70066D5E5 /* VipassanaManager.swift */,
+				46FD68DC1FE8546300427F9C /* TrackTemplateFactory.swift */,
+				1403DC2F2260FCBD00CC4B22 /* ExtensionHelper.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4630ECFC1FE71C660066D5E5 /* AudioAssets */ = {
+			isa = PBXGroup;
+			children = (
+				14A20910225BCA9500AA9BD5 /* bell_sound.mp3 */,
+				14A20912225BCD4200AA9BD5 /* BriefMindfulnessPractice.mp3 */,
+				14A20914225BCE1400AA9BD5 /* 3MinuteBreathing.mp3 */,
+				14A20916225BCE1A00AA9BD5 /* 5MinuteBreathing.mp3 */,
+				14A20918225BCF0100AA9BD5 /* BodyScan.mp3 */,
+				14A2091A225BCF0900AA9BD5 /* 4MinuteBodyScan.mp3 */,
+				14A2091C225BCFB600AA9BD5 /* SittingMeditation.mp3 */,
+				14A2091E225BD0A200AA9BD5 /* CompleteMeditation.mp3 */,
+				14A20920225BD1F600AA9BD5 /* MindfulYoga.mp3 */,
+				14A20922225BD2F300AA9BD5 /* CompassionateBreath.mp3 */,
+				14A20924225BD37100AA9BD5 /* MountainMeditation.mp3 */,
+				14A20926225BD37700AA9BD5 /* MountainMeditation2.mp3 */,
+				14A20928225BD41400AA9BD5 /* 5MinuteJustBells.mp3 */,
+				14A2092A225BD42500AA9BD5 /* 10MinuteJustBells.mp3 */,
+			);
+			path = AudioAssets;
+			sourceTree = "<group>";
+		};
+		46DA826920151EB200BA875D /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				14575C8122673D9100AC6FE0 /* View */,
+				1403DC2C2260FB8500CC4B22 /* View Controllers */,
+				146082232260E06300A2E8EF /* UIView + Extension.swift */,
+				146082252260E3C400A2E8EF /* UIColor + Extension.swift */,
+				14A746BA2265054A00DCED75 /* DateValueFormatter.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		46E6CB3C1FE6EA3200F09C38 = {
+			isa = PBXGroup;
+			children = (
+				46E6CB471FE6EA3200F09C38 /* Vipassana */,
+				46E6CB461FE6EA3200F09C38 /* Products */,
+				9E8DDFE5A6F6A36204153571 /* Pods */,
+				554C2F8F4D13716ED3179471 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		46E6CB461FE6EA3200F09C38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46E6CB451FE6EA3200F09C38 /* Vipassana.app */,
+				46E6CB591FE6EA3200F09C38 /* VipassanaTests.xctest */,
+				46E6CB641FE6EA3200F09C38 /* VipassanaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46E6CB471FE6EA3200F09C38 /* Vipassana */ = {
+			isa = PBXGroup;
+			children = (
+				46E6CB481FE6EA3200F09C38 /* AppDelegate.swift */,
+				14ADF6912285A27A00C9FE94 /* Vipassana.entitlements */,
+				46DA826920151EB200BA875D /* User Interface */,
+				46DA82662015165D00BA875D /* FONT-DINER-Coffee-Service.otf */,
+				46C1BCE820164ACC00824ECE /* SF-Pro-Text-Semibold.otf */,
+				4630ECFC1FE71C660066D5E5 /* AudioAssets */,
+				4630ECF81FE713CB0066D5E5 /* Managers */,
+				4630ECF31FE70C7B0066D5E5 /* Models */,
+				46E6CB4F1FE6EA3200F09C38 /* Assets.xcassets */,
+				1495388822C2587000A1BE76 /* GoogleService-Info.plist */,
+				46E6CB541FE6EA3200F09C38 /* Info.plist */,
+			);
+			path = Vipassana;
+			sourceTree = "<group>";
+		};
+		554C2F8F4D13716ED3179471 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14058AA322A5475100BD6F37 /* HealthKit.framework */,
+				17D351D51736672EA823AA45 /* Pods_Vipassana.framework */,
+				F6DAE4CC8989545BBC6992C7 /* Pods_VipassanaTests.framework */,
+				7E49E02B7C63CCEC257D7EC8 /* Pods_VipassanaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E8DDFE5A6F6A36204153571 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61ADE9A07E209704A393B431 /* Pods-Vipassana.debug.xcconfig */,
+				445DC16CB26190C66591027D /* Pods-Vipassana.release.xcconfig */,
+				1E501EDB7E8BB0BC2037E2BA /* Pods-VipassanaUITests.debug.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46E6CB441FE6EA3200F09C38 /* Vipassana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46E6CB6D1FE6EA3200F09C38 /* Build configuration list for PBXNativeTarget "Vipassana" */;
+			buildPhases = (
+				189AE129963B34DF80202D4C /* [CP] Check Pods Manifest.lock */,
+				46E6CB411FE6EA3200F09C38 /* Sources */,
+				46E6CB421FE6EA3200F09C38 /* Frameworks */,
+				46E6CB431FE6EA3200F09C38 /* Resources */,
+				499152EAC95AC4DCF04C3780 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vipassana;
+			productName = Vipassana;
+			productReference = 46E6CB451FE6EA3200F09C38 /* Vipassana.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46E6CB581FE6EA3200F09C38 /* VipassanaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46E6CB701FE6EA3200F09C38 /* Build configuration list for PBXNativeTarget "VipassanaTests" */;
+			buildPhases = (
+				46E6CB551FE6EA3200F09C38 /* Sources */,
+				46E6CB561FE6EA3200F09C38 /* Frameworks */,
+				46E6CB571FE6EA3200F09C38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46E6CB5B1FE6EA3200F09C38 /* PBXTargetDependency */,
+			);
+			name = VipassanaTests;
+			productName = VipassanaTests;
+			productReference = 46E6CB591FE6EA3200F09C38 /* VipassanaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46E6CB631FE6EA3200F09C38 /* VipassanaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46E6CB731FE6EA3200F09C38 /* Build configuration list for PBXNativeTarget "VipassanaUITests" */;
+			buildPhases = (
+				46E6CB601FE6EA3200F09C38 /* Sources */,
+				46E6CB611FE6EA3200F09C38 /* Frameworks */,
+				46E6CB621FE6EA3200F09C38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46E6CB661FE6EA3200F09C38 /* PBXTargetDependency */,
+			);
+			name = VipassanaUITests;
+			productName = VipassanaUITests;
+			productReference = 46E6CB641FE6EA3200F09C38 /* VipassanaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46E6CB3D1FE6EA3200F09C38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Russell Eric Dobda";
+				TargetAttributes = {
+					46E6CB441FE6EA3200F09C38 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					46E6CB581FE6EA3200F09C38 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 46E6CB441FE6EA3200F09C38;
+					};
+					46E6CB631FE6EA3200F09C38 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 46E6CB441FE6EA3200F09C38;
+					};
+				};
+			};
+			buildConfigurationList = 46E6CB401FE6EA3200F09C38 /* Build configuration list for PBXProject "Vipassana" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46E6CB3C1FE6EA3200F09C38;
+			productRefGroup = 46E6CB461FE6EA3200F09C38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46E6CB441FE6EA3200F09C38 /* Vipassana */,
+				46E6CB581FE6EA3200F09C38 /* VipassanaTests */,
+				46E6CB631FE6EA3200F09C38 /* VipassanaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46E6CB431FE6EA3200F09C38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A20919225BCF0100AA9BD5 /* BodyScan.mp3 in Resources */,
+				14A20923225BD2F300AA9BD5 /* CompassionateBreath.mp3 in Resources */,
+				14A746242264EF7000DCED75 /* README.md in Resources */,
+				14A20927225BD37800AA9BD5 /* MountainMeditation2.mp3 in Resources */,
+				14A746232264EF7000DCED75 /* Media.xcassets in Resources */,
+				14A2091B225BCF0900AA9BD5 /* 4MinuteBodyScan.mp3 in Resources */,
+				46E6CB531FE6EA3200F09C38 /* LaunchScreen.storyboard in Resources */,
+				14A20913225BCD4200AA9BD5 /* BriefMindfulnessPractice.mp3 in Resources */,
+				46C1BCE920164ACD00824ECE /* SF-Pro-Text-Semibold.otf in Resources */,
+				14A2092B225BD42500AA9BD5 /* 10MinuteJustBells.mp3 in Resources */,
+				14A2091F225BD0A200AA9BD5 /* CompleteMeditation.mp3 in Resources */,
+				14A20915225BCE1400AA9BD5 /* 3MinuteBreathing.mp3 in Resources */,
+				46E6CB501FE6EA3200F09C38 /* Assets.xcassets in Resources */,
+				1495388922C2587000A1BE76 /* GoogleService-Info.plist in Resources */,
+				14A20921225BD1F600AA9BD5 /* MindfulYoga.mp3 in Resources */,
+				14A2091D225BCFB600AA9BD5 /* SittingMeditation.mp3 in Resources */,
+				46E6CB4E1FE6EA3200F09C38 /* Main.storyboard in Resources */,
+				14A746202264EF7000DCED75 /* LICENSE in Resources */,
+				14A20929225BD41400AA9BD5 /* 5MinuteJustBells.mp3 in Resources */,
+				46DA82672015165E00BA875D /* FONT-DINER-Coffee-Service.otf in Resources */,
+				14A20925225BD37100AA9BD5 /* MountainMeditation.mp3 in Resources */,
+				14A20911225BCA9500AA9BD5 /* bell_sound.mp3 in Resources */,
+				14A20917225BCE1A00AA9BD5 /* 5MinuteBreathing.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E6CB571FE6EA3200F09C38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E6CB621FE6EA3200F09C38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		189AE129963B34DF80202D4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vipassana-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		499152EAC95AC4DCF04C3780 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vipassana/Pods-Vipassana-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/InStatPlayer/InStatPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
+				"${BUILT_PRODUCTS_DIR}/SSCircularSlider/SSCircularSlider.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InStatPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Macaw.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSCircularSlider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vipassana/Pods-Vipassana-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46E6CB411FE6EA3200F09C38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4630ECF71FE712350066D5E5 /* User.swift in Sources */,
+				14575C8B2267438800AC6FE0 /* IndicatorView.swift in Sources */,
+				14E3F8EC2264D8790008324A /* MoodSliderVC.swift in Sources */,
+				14995F7322C8F90500B1B9A1 /* LogInVC.swift in Sources */,
+				14A746222264EF7000DCED75 /* SSCircularRingSlider.swift in Sources */,
+				14995F8122CBAB5800B1B9A1 /* File.swift in Sources */,
+				14A20933225BE6B900AA9BD5 /* BreathPracticeVC.swift in Sources */,
+				46DA826B20151ED700BA875D /* VipassanaButton.swift in Sources */,
+				14995F7B22C8F9E700B1B9A1 /* HomeVC.swift in Sources */,
+				4630ECFA1FE713E70066D5E5 /* VipassanaManager.swift in Sources */,
+				146082242260E06300A2E8EF /* UIView + Extension.swift in Sources */,
+				1403DC302260FCBD00CC4B22 /* ExtensionHelper.swift in Sources */,
+				14ACBEB422949BFB0045527E /* MacawChartView.swift in Sources */,
+				14995F7422C8F90500B1B9A1 /* RegistrationVC.swift in Sources */,
+				46E6CB4B1FE6EA3200F09C38 /* ViewController.swift in Sources */,
+				14A20935225BFB3E00AA9BD5 /* SettingsVC.swift in Sources */,
+				146082222260D70700A2E8EF /* MoodRatingVC.swift in Sources */,
+				46E6CB491FE6EA3200F09C38 /* AppDelegate.swift in Sources */,
+				14A746BB2265054A00DCED75 /* DateValueFormatter.swift in Sources */,
+				46FD68DD1FE8546300427F9C /* TrackTemplateFactory.swift in Sources */,
+				14A746212264EF7000DCED75 /* Extentions.swift in Sources */,
+				1403C667225D281D005DAAFE /* WorkoutTypesTVC.swift in Sources */,
+				4630ECF51FE70CA50066D5E5 /* Track.swift in Sources */,
+				4663D591201503ED00CE7E83 /* MeditationViewController.swift in Sources */,
+				14A20931225BE58300AA9BD5 /* BreathVC.swift in Sources */,
+				14995F7522C8F90500B1B9A1 /* WelcomeVC.swift in Sources */,
+				146082262260E3C400A2E8EF /* UIColor + Extension.swift in Sources */,
+				46FD68DB1FE8545800427F9C /* TrackTemplate.swift in Sources */,
+				14ACBEB022949B220045527E /* ChartViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E6CB551FE6EA3200F09C38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E6CB601FE6EA3200F09C38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46E6CB5B1FE6EA3200F09C38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46E6CB441FE6EA3200F09C38 /* Vipassana */;
+			targetProxy = 46E6CB5A1FE6EA3200F09C38 /* PBXContainerItemProxy */;
+		};
+		46E6CB661FE6EA3200F09C38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46E6CB441FE6EA3200F09C38 /* Vipassana */;
+			targetProxy = 46E6CB651FE6EA3200F09C38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46E6CB4C1FE6EA3200F09C38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46E6CB4D1FE6EA3200F09C38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46E6CB511FE6EA3200F09C38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46E6CB521FE6EA3200F09C38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46E6CB6B1FE6EA3200F09C38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46E6CB6C1FE6EA3200F09C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46E6CB6E1FE6EA3200F09C38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61ADE9A07E209704A393B431 /* Pods-Vipassana.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Vipassana/Vipassana.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3JVGMSMQ2;
+				INFOPLIST_FILE = Vipassana/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.darya.Vipassana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		46E6CB6F1FE6EA3200F09C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 445DC16CB26190C66591027D /* Pods-Vipassana.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Vipassana/Vipassana.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3JVGMSMQ2;
+				INFOPLIST_FILE = Vipassana/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.darya.Vipassana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		46E6CB711FE6EA3200F09C38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3JVGMSMQ2;
+				INFOPLIST_FILE = VipassanaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.russellEricDobda.VipassanaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vipassana.app/Vipassana";
+			};
+			name = Debug;
+		};
+		46E6CB721FE6EA3200F09C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3JVGMSMQ2;
+				INFOPLIST_FILE = VipassanaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.russellEricDobda.VipassanaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vipassana.app/Vipassana";
+			};
+			name = Release;
+		};
+		46E6CB741FE6EA3200F09C38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3JVGMSMQ2;
+				INFOPLIST_FILE = VipassanaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.russellEricDobda.VipassanaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vipassana;
+			};
+			name = Debug;
+		};
+		46E6CB751FE6EA3200F09C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3JVGMSMQ2;
+				INFOPLIST_FILE = VipassanaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.russellEricDobda.VipassanaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vipassana;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46E6CB401FE6EA3200F09C38 /* Build configuration list for PBXProject "Vipassana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E6CB6B1FE6EA3200F09C38 /* Debug */,
+				46E6CB6C1FE6EA3200F09C38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		46E6CB6D1FE6EA3200F09C38 /* Build configuration list for PBXNativeTarget "Vipassana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E6CB6E1FE6EA3200F09C38 /* Debug */,
+				46E6CB6F1FE6EA3200F09C38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		46E6CB701FE6EA3200F09C38 /* Build configuration list for PBXNativeTarget "VipassanaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E6CB711FE6EA3200F09C38 /* Debug */,
+				46E6CB721FE6EA3200F09C38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		46E6CB731FE6EA3200F09C38 /* Build configuration list for PBXNativeTarget "VipassanaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E6CB741FE6EA3200F09C38 /* Debug */,
+				46E6CB751FE6EA3200F09C38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46E6CB3D1FE6EA3200F09C38 /* Project object */;
+}

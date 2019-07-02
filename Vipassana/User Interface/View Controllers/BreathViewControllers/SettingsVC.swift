@@ -2,16 +2,16 @@
 //  SettingsVC.swift
 //  Vipassana
 //
-//  Created by Dasha Chastokolenko on 4/9/19.
+//  Created by Dasha Chastokolenko on 5/22/19.
 //  Copyright © 2019 Dasha Chastokolenko. All rights reserved.
 //
 
 import UIKit
 
-let BreatheInTimeKey = "Breathe in time"
-let PauseTimeAfterBreathInKey = "Pause time after breath in"
-let BreatheOutTimeKey = "Breathe out time"
-let PauseTimeAfterBreathOutKey = "Pause time after breath out"
+let BreatheInTimeKey = "Inhale time"
+let PauseTimeAfterBreathInKey = "Pause time after inhale"
+let BreatheOutTimeKey = "Exhale time"
+let PauseTimeAfterBreathOutKey = "Pause time after exhale"
 
 class SettingsVC: UIViewController {
     
@@ -28,13 +28,23 @@ class SettingsVC: UIViewController {
     
     var sliders: [UISlider] = []
     var labels: [UILabel] = []
-    let userDefaultsKeys = [BreatheInTimeKey, PauseTimeAfterBreathInKey, BreatheOutTimeKey, PauseTimeAfterBreathOutKey]
+    let userDefaultsKeys = [BreatheInTimeKey,
+                            PauseTimeAfterBreathInKey,
+                            BreatheOutTimeKey,
+                            PauseTimeAfterBreathOutKey]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sliders = [breatheInTimeSlider, pauseAfterBreathInTimeSlider, breathOutTimeSlider, pauseAfterBreathOutTimeSlider]
-        labels = [breatheInTimeLabel, pauseAfterBreathInTimeLabel, breathOutTimeLabel, pauseAfterBreathOutTimeLabel] as! [UILabel]
+        sliders = [breatheInTimeSlider,
+                   pauseAfterBreathInTimeSlider,
+                   breathOutTimeSlider,
+                   pauseAfterBreathOutTimeSlider]
+        
+        labels = [breatheInTimeLabel,
+                  pauseAfterBreathInTimeLabel,
+                  breathOutTimeLabel,
+                  pauseAfterBreathOutTimeLabel] as! [UILabel]
         
         refreshInterface()
         
