@@ -1,0 +1,30 @@
+PODS:
+  - Charts (3.3):
+    - Charts/Core (= 3.3)
+  - Charts/Core (3.3)
+  - InStatPlayer (2.0.1)
+  - lottie-ios (3.0.4)
+  - SSCircularSlider (1.0.5)
+
+DEPENDENCIES:
+  - Charts
+  - InStatPlayer
+  - lottie-ios
+  - SSCircularSlider
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Charts
+    - InStatPlayer
+    - lottie-ios
+    - SSCircularSlider
+
+SPEC CHECKSUMS:
+  Charts: a5609adcbd70a0f7e15c6984d7e9b5ceecf3b71d
+  InStatPlayer: 903a8697ba2dfa03da28294cd19de7b3513287ff
+  lottie-ios: 55a2de40418f8de2b155efaba4d4d1a025a5c570
+  SSCircularSlider: 91c818e6e44b10b4a964cc9973f1a238d2e2b308
+
+PODFILE CHECKSUM: c037895652d6af39bd71e47ffc2b3d4d15eba752
+
+COCOAPODS: 1.6.1
