@@ -20,6 +20,20 @@
 		14995F7522C8F90500B1B9A1 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14995F7222C8F90500B1B9A1 /* WelcomeVC.swift */; };
 		14995F7B22C8F9E700B1B9A1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14995F7A22C8F9E700B1B9A1 /* HomeVC.swift */; };
 		14995F8122CBAB5800B1B9A1 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14995F8022CBAB5800B1B9A1 /* File.swift */; };
+		14995F9022CBC42B00B1B9A1 /* BodyScan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995F8222CBC42A00B1B9A1 /* BodyScan.mp3 */; };
+		14995F9122CBC42B00B1B9A1 /* SittingMeditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995F8322CBC42A00B1B9A1 /* SittingMeditation.mp3 */; };
+		14995F9222CBC42B00B1B9A1 /* bell_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995F8422CBC42A00B1B9A1 /* bell_sound.mp3 */; };
+		14995F9322CBC42B00B1B9A1 /* CompassionateBreath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995F8522CBC42A00B1B9A1 /* CompassionateBreath.mp3 */; };
+		14995F9422CBC42B00B1B9A1 /* CompleteMeditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995F8622CBC42A00B1B9A1 /* CompleteMeditation.mp3 */; };
+		14995F9522CBC42B00B1B9A1 /* 3MinuteBreathing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995F8722CBC42A00B1B9A1 /* 3MinuteBreathing.mp3 */; };
+		14995F9622CBC42B00B1B9A1 /* 4MinuteBodyScan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995F8822CBC42A00B1B9A1 /* 4MinuteBodyScan.mp3 */; };
+		14995F9722CBC42B00B1B9A1 /* 10MinuteJustBells.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995F8922CBC42B00B1B9A1 /* 10MinuteJustBells.mp3 */; };
+		14995F9822CBC42B00B1B9A1 /* MountainMeditation2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995F8A22CBC42B00B1B9A1 /* MountainMeditation2.mp3 */; };
+		14995F9922CBC42B00B1B9A1 /* 5MinuteJustBells.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995F8B22CBC42B00B1B9A1 /* 5MinuteJustBells.mp3 */; };
+		14995F9A22CBC42B00B1B9A1 /* MountainMeditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995F8C22CBC42B00B1B9A1 /* MountainMeditation.mp3 */; };
+		14995F9B22CBC42B00B1B9A1 /* MindfulYoga.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995F8D22CBC42B00B1B9A1 /* MindfulYoga.mp3 */; };
+		14995F9C22CBC42B00B1B9A1 /* 5MinuteBreathing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995F8E22CBC42B00B1B9A1 /* 5MinuteBreathing.mp3 */; };
+		14995F9D22CBC42B00B1B9A1 /* BriefMindfulnessPractice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995F8F22CBC42B00B1B9A1 /* BriefMindfulnessPractice.mp3 */; };
 		14A20911225BCA9500AA9BD5 /* bell_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A20910225BCA9500AA9BD5 /* bell_sound.mp3 */; };
 		14A20913225BCD4200AA9BD5 /* BriefMindfulnessPractice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A20912225BCD4200AA9BD5 /* BriefMindfulnessPractice.mp3 */; };
 		14A20915225BCE1400AA9BD5 /* 3MinuteBreathing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14A20914225BCE1400AA9BD5 /* 3MinuteBreathing.mp3 */; };
@@ -94,6 +108,20 @@
 		14995F7222C8F90500B1B9A1 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		14995F7A22C8F9E700B1B9A1 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		14995F8022CBAB5800B1B9A1 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		14995F8222CBC42A00B1B9A1 /* BodyScan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BodyScan.mp3; sourceTree = "<group>"; };
+		14995F8322CBC42A00B1B9A1 /* SittingMeditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SittingMeditation.mp3; sourceTree = "<group>"; };
+		14995F8422CBC42A00B1B9A1 /* bell_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell_sound.mp3; sourceTree = "<group>"; };
+		14995F8522CBC42A00B1B9A1 /* CompassionateBreath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CompassionateBreath.mp3; sourceTree = "<group>"; };
+		14995F8622CBC42A00B1B9A1 /* CompleteMeditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CompleteMeditation.mp3; sourceTree = "<group>"; };
+		14995F8722CBC42A00B1B9A1 /* 3MinuteBreathing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3MinuteBreathing.mp3; sourceTree = "<group>"; };
+		14995F8822CBC42A00B1B9A1 /* 4MinuteBodyScan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4MinuteBodyScan.mp3; sourceTree = "<group>"; };
+		14995F8922CBC42B00B1B9A1 /* 10MinuteJustBells.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10MinuteJustBells.mp3; sourceTree = "<group>"; };
+		14995F8A22CBC42B00B1B9A1 /* MountainMeditation2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MountainMeditation2.mp3; sourceTree = "<group>"; };
+		14995F8B22CBC42B00B1B9A1 /* 5MinuteJustBells.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5MinuteJustBells.mp3; sourceTree = "<group>"; };
+		14995F8C22CBC42B00B1B9A1 /* MountainMeditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MountainMeditation.mp3; sourceTree = "<group>"; };
+		14995F8D22CBC42B00B1B9A1 /* MindfulYoga.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MindfulYoga.mp3; sourceTree = "<group>"; };
+		14995F8E22CBC42B00B1B9A1 /* 5MinuteBreathing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5MinuteBreathing.mp3; sourceTree = "<group>"; };
+		14995F8F22CBC42B00B1B9A1 /* BriefMindfulnessPractice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BriefMindfulnessPractice.mp3; sourceTree = "<group>"; };
 		14A20910225BCA9500AA9BD5 /* bell_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bell_sound.mp3; path = ../../../../../Guest/MeditationAudio/bell_sound.mp3; sourceTree = "<group>"; };
 		14A20912225BCD4200AA9BD5 /* BriefMindfulnessPractice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = BriefMindfulnessPractice.mp3; path = ../../../../../Guest/MeditationAudio/BriefMindfulnessPractice.mp3; sourceTree = "<group>"; };
 		14A20914225BCE1400AA9BD5 /* 3MinuteBreathing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 3MinuteBreathing.mp3; path = ../../../../../Guest/MeditationAudio/3MinuteBreathing.mp3; sourceTree = "<group>"; };
@@ -308,6 +336,20 @@
 		4630ECFC1FE71C660066D5E5 /* AudioAssets */ = {
 			isa = PBXGroup;
 			children = (
+				14995F8722CBC42A00B1B9A1 /* 3MinuteBreathing.mp3 */,
+				14995F8822CBC42A00B1B9A1 /* 4MinuteBodyScan.mp3 */,
+				14995F8E22CBC42B00B1B9A1 /* 5MinuteBreathing.mp3 */,
+				14995F8B22CBC42B00B1B9A1 /* 5MinuteJustBells.mp3 */,
+				14995F8922CBC42B00B1B9A1 /* 10MinuteJustBells.mp3 */,
+				14995F8422CBC42A00B1B9A1 /* bell_sound.mp3 */,
+				14995F8222CBC42A00B1B9A1 /* BodyScan.mp3 */,
+				14995F8F22CBC42B00B1B9A1 /* BriefMindfulnessPractice.mp3 */,
+				14995F8522CBC42A00B1B9A1 /* CompassionateBreath.mp3 */,
+				14995F8622CBC42A00B1B9A1 /* CompleteMeditation.mp3 */,
+				14995F8D22CBC42B00B1B9A1 /* MindfulYoga.mp3 */,
+				14995F8C22CBC42B00B1B9A1 /* MountainMeditation.mp3 */,
+				14995F8A22CBC42B00B1B9A1 /* MountainMeditation2.mp3 */,
+				14995F8322CBC42A00B1B9A1 /* SittingMeditation.mp3 */,
 				14A20910225BCA9500AA9BD5 /* bell_sound.mp3 */,
 				14A20912225BCD4200AA9BD5 /* BriefMindfulnessPractice.mp3 */,
 				14A20914225BCE1400AA9BD5 /* 3MinuteBreathing.mp3 */,
@@ -514,27 +556,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14995F9822CBC42B00B1B9A1 /* MountainMeditation2.mp3 in Resources */,
 				14A20919225BCF0100AA9BD5 /* BodyScan.mp3 in Resources */,
+				14995F9722CBC42B00B1B9A1 /* 10MinuteJustBells.mp3 in Resources */,
+				14995F9D22CBC42B00B1B9A1 /* BriefMindfulnessPractice.mp3 in Resources */,
+				14995F9522CBC42B00B1B9A1 /* 3MinuteBreathing.mp3 in Resources */,
+				14995F9922CBC42B00B1B9A1 /* 5MinuteJustBells.mp3 in Resources */,
+				14995F9C22CBC42B00B1B9A1 /* 5MinuteBreathing.mp3 in Resources */,
+				14995F9222CBC42B00B1B9A1 /* bell_sound.mp3 in Resources */,
 				14A20923225BD2F300AA9BD5 /* CompassionateBreath.mp3 in Resources */,
 				14A746242264EF7000DCED75 /* README.md in Resources */,
 				14A20927225BD37800AA9BD5 /* MountainMeditation2.mp3 in Resources */,
 				14A746232264EF7000DCED75 /* Media.xcassets in Resources */,
 				14A2091B225BCF0900AA9BD5 /* 4MinuteBodyScan.mp3 in Resources */,
+				14995F9322CBC42B00B1B9A1 /* CompassionateBreath.mp3 in Resources */,
 				46E6CB531FE6EA3200F09C38 /* LaunchScreen.storyboard in Resources */,
+				14995F9122CBC42B00B1B9A1 /* SittingMeditation.mp3 in Resources */,
 				14A20913225BCD4200AA9BD5 /* BriefMindfulnessPractice.mp3 in Resources */,
+				14995F9622CBC42B00B1B9A1 /* 4MinuteBodyScan.mp3 in Resources */,
 				46C1BCE920164ACD00824ECE /* SF-Pro-Text-Semibold.otf in Resources */,
 				14A2092B225BD42500AA9BD5 /* 10MinuteJustBells.mp3 in Resources */,
 				14A2091F225BD0A200AA9BD5 /* CompleteMeditation.mp3 in Resources */,
 				14A20915225BCE1400AA9BD5 /* 3MinuteBreathing.mp3 in Resources */,
+				14995F9422CBC42B00B1B9A1 /* CompleteMeditation.mp3 in Resources */,
 				46E6CB501FE6EA3200F09C38 /* Assets.xcassets in Resources */,
 				1495388922C2587000A1BE76 /* GoogleService-Info.plist in Resources */,
 				14A20921225BD1F600AA9BD5 /* MindfulYoga.mp3 in Resources */,
 				14A2091D225BCFB600AA9BD5 /* SittingMeditation.mp3 in Resources */,
+				14995F9A22CBC42B00B1B9A1 /* MountainMeditation.mp3 in Resources */,
 				46E6CB4E1FE6EA3200F09C38 /* Main.storyboard in Resources */,
 				14A746202264EF7000DCED75 /* LICENSE in Resources */,
 				14A20929225BD41400AA9BD5 /* 5MinuteJustBells.mp3 in Resources */,
+				14995F9B22CBC42B00B1B9A1 /* MindfulYoga.mp3 in Resources */,
 				46DA82672015165E00BA875D /* FONT-DINER-Coffee-Service.otf in Resources */,
 				14A20925225BD37100AA9BD5 /* MountainMeditation.mp3 in Resources */,
+				14995F9022CBC42B00B1B9A1 /* BodyScan.mp3 in Resources */,
 				14A20911225BCA9500AA9BD5 /* bell_sound.mp3 in Resources */,
 				14A20917225BCE1A00AA9BD5 /* 5MinuteBreathing.mp3 in Resources */,
 			);
