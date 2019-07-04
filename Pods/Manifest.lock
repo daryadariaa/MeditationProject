@@ -1,4 +1,7 @@
 PODS:
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
   - Charts (3.3.0):
     - Charts/Core (= 3.3.0)
   - Charts/Core (3.3.0)
@@ -77,11 +80,17 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - Realm (3.16.2):
+    - Realm/Headers (= 3.16.2)
+  - Realm/Headers (3.16.2)
+  - RealmSwift (3.16.2):
+    - Realm (= 3.16.2)
   - SSCircularSlider (2.0.0)
   - SVProgressHUD (2.2.5)
   - SWXMLHash (4.9.0)
 
 DEPENDENCIES:
+  - ChameleonFramework
   - Charts
   - Firebase
   - Firebase/Auth
@@ -89,11 +98,14 @@ DEPENDENCIES:
   - InStatPlayer
   - lottie-ios
   - Macaw (= 0.9.5)
+  - Realm
+  - RealmSwift
   - SSCircularSlider
   - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - ChameleonFramework
     - Charts
     - Firebase
     - FirebaseAnalytics
@@ -110,11 +122,14 @@ SPEC REPOS:
     - lottie-ios
     - Macaw
     - nanopb
+    - Realm
+    - RealmSwift
     - SSCircularSlider
     - SVProgressHUD
     - SWXMLHash
 
 SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Charts: e0dd4cd8f257bccf98407b58183ddca8e8d5b578
   Firebase: 8432d732974498afd5987e9001a05f90f1a3d625
   FirebaseAnalytics: 470ddab7253b21ad5a40bebd4a9903d7ae19386a
@@ -131,10 +146,12 @@ SPEC CHECKSUMS:
   lottie-ios: 9467723922dfff46f6d4e3019c32594a62440b7c
   Macaw: 10bf9e327cb75f24e3225d5229a80ed544df85f0
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Realm: 0e73b4edeb5b6a90da3d83206883b2e34e00eb38
+  RealmSwift: a81e650171ef0a5f999df1ed8d39ba8d6fce88a4
   SSCircularSlider: 15d9c290458e8fa5c58e6e46fd3fa1d59405b36b
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SWXMLHash: 87b0006848a548b7f9485b40bc71721b3ae39add
 
-PODFILE CHECKSUM: 0823f4f9f5b87116f0c1dfc8df21196bb32575f2
+PODFILE CHECKSUM: c9ff16c2a0ebc471bafc8412d5acf6dc95686252
 
 COCOAPODS: 1.6.1

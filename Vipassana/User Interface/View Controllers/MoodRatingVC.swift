@@ -19,17 +19,23 @@ class MoodRatingVC: UIViewController {
         moodTableView.dataSource = self
     }
     
-    @IBAction func continuePressed(_ sender: UIBarButtonItem) {
-        let mainstoryBoard = UIStoryboard(name: "Main", bundle: nil)
-        guard let moodSliderController = mainstoryBoard.instantiateViewController(
-            withIdentifier: "\(MoodSliderVC.self)") as? MoodSliderVC else { return }
-        navigationController?.pushViewController(moodSliderController, animated: true)
+    //MARK: - Actions
+    
+    @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
+        
+        let mainStoryboard = UIStoryboard(name: "Mian", bundle: nil)
+        
+        guard let moodSliderVC = mainStoryboard.instantiateViewController(withIdentifier: "\(MoodSliderVC.self)") as? MoodSliderVC else { return }
+        
+        navigationController?.pushViewController(moodSliderVC, animated: true)
+        
     }
+
 }
 
+// MARK: - Table view data source
+
 extension MoodRatingVC: UITableViewDataSource {
-    
-    // MARK: - Table view data source
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableView.allowsSelection = false
@@ -38,7 +44,8 @@ extension MoodRatingVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell! = UITableViewCell()
+        
+        let cell = UITableViewCell()
         
         cell.backgroundColor = UIColor(white: 1, alpha: 0.1)
         

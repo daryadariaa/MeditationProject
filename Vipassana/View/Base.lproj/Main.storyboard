@@ -26,13 +26,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours Spent Meditating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oce-wa-iBL">
-                                <rect key="frame" x="116.66666666666669" y="773" width="181" height="20"/>
+                                <rect key="frame" x="108.00000000000001" y="773" width="198.33333333333337" height="20"/>
                                 <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a session to begin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AE2-4X-tmF">
-                                <rect key="frame" x="119" y="192" width="176" height="20"/>
+                                <rect key="frame" x="111.66666666666667" y="192" width="190.66666666666663" height="20"/>
                                 <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -133,7 +133,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bH-Db-RA2">
-                                <rect key="frame" x="44" y="142" width="326" height="39.666666666666657"/>
+                                <rect key="frame" x="44" y="98" width="326" height="39.666666666666657"/>
                                 <string key="text">Breathe in as the bar rises
 and out as it falls</string>
                                 <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="17"/>
@@ -141,7 +141,7 @@ and out as it falls</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BB7-JD-uGp">
-                                <rect key="frame" x="78" y="369" width="258" height="386"/>
+                                <rect key="frame" x="78" y="325" width="258" height="430"/>
                                 <fontDescription key="fontDescription" name="CoffeeService" family="Coffee Service" pointSize="34"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
@@ -186,14 +186,16 @@ and out as it falls</string>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5YE-Ms-f2h">
                                 <rect key="frame" x="0.0" y="-5" width="396" height="44"/>
                                 <items>
-                                    <navigationItem id="0Be-j4-5E4"/>
+                                    <navigationItem id="0Be-j4-5E4">
+                                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="iy4-JO-Mcn"/>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKf-Ss-HsW">
-                                <rect key="frame" x="0.0" y="39" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="39" width="414" height="857"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UUP-Yy-1J6">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="857"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -236,31 +238,12 @@ and out as it falls</string>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="UUP-Yy-1J6" firstAttribute="top" secondItem="eKf-Ss-HsW" secondAttribute="top" id="BY2-MD-ffU"/>
-                                    <constraint firstAttribute="bottom" secondItem="UUP-Yy-1J6" secondAttribute="bottom" id="Hew-Pb-XZX"/>
-                                    <constraint firstAttribute="bottom" secondItem="UUP-Yy-1J6" secondAttribute="bottom" id="Pz8-y0-3cg"/>
+                                    <constraint firstAttribute="bottom" secondItem="UUP-Yy-1J6" secondAttribute="bottom" id="0nK-cW-fIH"/>
                                     <constraint firstItem="UUP-Yy-1J6" firstAttribute="top" secondItem="eKf-Ss-HsW" secondAttribute="top" id="WLB-eJ-s0e"/>
                                     <constraint firstAttribute="trailing" secondItem="UUP-Yy-1J6" secondAttribute="trailing" id="XWZ-Ip-O22"/>
-                                    <constraint firstAttribute="trailing" secondItem="UUP-Yy-1J6" secondAttribute="trailing" id="YdZ-Ws-g2r"/>
                                     <constraint firstItem="UUP-Yy-1J6" firstAttribute="leading" secondItem="eKf-Ss-HsW" secondAttribute="leading" id="eLO-ml-gzA"/>
-                                    <constraint firstItem="UUP-Yy-1J6" firstAttribute="leading" secondItem="eKf-Ss-HsW" secondAttribute="leading" id="ete-EQ-shy"/>
                                 </constraints>
                             </view>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGT-8e-Ozc">
-                                <rect key="frame" x="0.0" y="852" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cJh-a0-hcl"/>
-                                    <barButtonItem title="Continue" id="r1q-wD-wtx">
-                                        <connections>
-                                            <action selector="continuePressed:" destination="I2x-0I-yEe" id="WAG-Rt-Aor"/>
-                                            <segue destination="wY0-GU-6i2" kind="show" id="WbC-9w-Aq8"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="FJ8-2c-NtO"/>
-                                </items>
-                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.062745098039215685" green="0.76470588235294112" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -268,15 +251,13 @@ and out as it falls</string>
                             <constraint firstItem="eKf-Ss-HsW" firstAttribute="leading" secondItem="5YE-Ms-f2h" secondAttribute="leading" id="Kpa-wZ-hWj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5YE-Ms-f2h" secondAttribute="trailing" constant="-2" id="Kyh-Ww-v0h"/>
                             <constraint firstAttribute="trailing" secondItem="eKf-Ss-HsW" secondAttribute="trailing" id="Lzr-eb-AL2"/>
+                            <constraint firstAttribute="bottom" secondItem="eKf-Ss-HsW" secondAttribute="bottom" id="YzJ-sf-uG9"/>
                             <constraint firstItem="5YE-Ms-f2h" firstAttribute="leading" secondItem="QM3-aM-TsB" secondAttribute="leading" id="ils-Yj-R9Y"/>
                             <constraint firstItem="5YE-Ms-f2h" firstAttribute="top" secondItem="QM3-aM-TsB" secondAttribute="topMargin" constant="-49" id="jlg-dd-hAo"/>
-                            <constraint firstItem="eKf-Ss-HsW" firstAttribute="bottom" secondItem="nw8-0H-z7z" secondAttribute="bottom" id="t0B-4a-M7Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nw8-0H-z7z"/>
                     </view>
-                    <navigationItem key="navigationItem" title="RATE YOUR MOOD" id="hGB-FC-Srs">
-                        <barButtonItem key="backBarButtonItem" title=" " id="Lfz-Fd-hF1"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="RATE YOUR MOOD" id="hGB-FC-Srs"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="moodTableView" destination="UUP-Yy-1J6" id="VbG-Qu-CJ1"/>
@@ -285,7 +266,7 @@ and out as it falls</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1u-Ma-Tsz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="519" y="148"/>
+            <point key="canvasLocation" x="518.84057971014499" y="147.99107142857142"/>
         </scene>
         <!--Breath PracticeVC-->
         <scene sceneID="zoJ-OZ-wMx">
@@ -296,13 +277,13 @@ and out as it falls</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yogastart" translatesAutoresizingMaskIntoConstraints="NO" id="Or8-Dc-Osa">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obA-kD-Qqz" userLabel="Border View">
-                                <rect key="frame" x="5" y="248.66666666666663" width="404" height="404"/>
+                                <rect key="frame" x="5" y="251" width="404" height="404"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDK-2K-11S" userLabel="Breath View">
-                                        <rect key="frame" x="10" y="10.000000000000028" width="384" height="384"/>
+                                        <rect key="frame" x="10" y="10" width="384" height="384"/>
                                         <color key="backgroundColor" red="0.97647058819999999" green="0.72549019609999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="FDK-2K-11S" secondAttribute="height" multiplier="1:1" id="soO-QZ-E86"/>
@@ -321,7 +302,7 @@ and out as it falls</string>
                                 </constraints>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pln-7F-TIu">
-                                <rect key="frame" x="0.0" y="769" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ILq-sS-143"/>
                                     <barButtonItem title="Settings" id="LQ3-bz-V6M">
@@ -333,7 +314,7 @@ and out as it falls</string>
                                 </items>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deep Breathing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDw-Z7-b42">
-                                <rect key="frame" x="41" y="87.999999999999986" width="333" height="141.66666666666663"/>
+                                <rect key="frame" x="41" y="44" width="333" height="188"/>
                                 <fontDescription key="fontDescription" name="CoffeeService" family="Coffee Service" pointSize="34"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -386,7 +367,7 @@ and out as it falls</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ta2-gZ-gGx">
-                                <rect key="frame" x="20" y="162.99999999999997" width="374" height="291.33333333333326"/>
+                                <rect key="frame" x="20" y="118.99999999999997" width="374" height="291.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fo1-ED-rzi">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50.333333333333336"/>
@@ -464,7 +445,7 @@ and out as it falls</string>
                                                 </constraints>
                                             </stackView>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yhc-vO-IAU">
-                                                <rect key="frame" x="-2" y="20.333333333333343" width="378" height="31"/>
+                                                <rect key="frame" x="-2" y="20.333333333333314" width="378" height="31"/>
                                                 <connections>
                                                     <action selector="sliderTouchUpInside:" destination="0Kh-iQ-EkO" eventType="valueChanged" id="Llw-qZ-bXH"/>
                                                     <action selector="sliderValueChanged:" destination="0Kh-iQ-EkO" eventType="valueChanged" id="oW8-u2-KnY"/>
@@ -620,7 +601,7 @@ and out as it falls</string>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLJ-Cx-AjG">
-                                <rect key="frame" x="176" y="588" width="62" height="29"/>
+                                <rect key="frame" x="176" y="646" width="62" height="29"/>
                                 <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="24"/>
                                 <color key="textColor" red="0.72549019609999998" green="0.70980392160000005" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -643,7 +624,7 @@ and out as it falls</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJe-Le-qHR">
-                                <rect key="frame" x="188" y="541" width="38" height="42"/>
+                                <rect key="frame" x="157" y="541" width="100" height="100"/>
                                 <state key="normal" image="pause"/>
                                 <connections>
                                     <action selector="didTapPlayPause:" destination="mzx-qC-83o" eventType="touchUpInside" id="Wgx-at-OqF"/>
@@ -701,7 +682,7 @@ and out as it falls</string>
         <!--YOUR WAY TO De-Stress-->
         <scene sceneID="MlS-aP-9A0">
             <objects>
-                <tableViewController storyboardIdentifier="WorkoutTypesTVC" id="MfR-iR-21t" customClass="WorkoutTypesTVC" customModule="Vipassana" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="WorkoutTypesTVC" wantsFullScreenLayout="YES" id="MfR-iR-21t" customClass="WorkoutTypesTVC" customModule="Vipassana" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7fP-ip-OAG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -774,6 +755,7 @@ and out as it falls</string>
                             <outlet property="delegate" destination="MfR-iR-21t" id="3I1-cx-c4F"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="meditation" selectedImage="meditation" id="H8W-O9-Ddr"/>
                     <navigationItem key="navigationItem" title="YOUR WAY TO De-Stress" id="cit-wX-rkl"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -786,7 +768,7 @@ and out as it falls</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zNm-C6-WXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-64" y="-666"/>
+            <point key="canvasLocation" x="842.02898550724649" y="-763.39285714285711"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="4q0-VI-mFn">
@@ -945,35 +927,16 @@ and out as it falls</string>
             </objects>
             <point key="canvasLocation" x="220" y="-3015"/>
         </scene>
-        <!--HomeVC-->
-        <scene sceneID="Rrl-pe-9Mj">
-            <objects>
-                <tabBarController storyboardIdentifier="HomeVC" wantsFullScreenLayout="YES" id="DJb-C9-PHC" customClass="HomeVC" customModule="Vipassana" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="fNs-tw-QCw"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gm7-im-jWy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="Xxm-LL-bwU" kind="relationship" relationship="viewControllers" id="GW5-Mw-PGg"/>
-                        <segue destination="Psm-8i-NfW" kind="relationship" relationship="viewControllers" id="U5K-XX-hQb"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lkk-NW-erL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="908" y="-2349"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="aZr-Ks-WM5">
             <objects>
-                <viewController id="dst-xM-2ku" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" id="dst-xM-2ku" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QrS-ZH-766">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="SIz-L7-UgU" customClass="MacawChartView" customModule="Vipassana">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.61176470589999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="SIz-L7-UgU" secondAttribute="height" multiplier="1:1" id="SA1-8j-oiN"/>
@@ -989,30 +952,12 @@ and out as it falls</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JSH-m2-lbs"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="stats" selectedImage="stats" id="sQ2-eq-7V4"/>
                     <navigationItem key="navigationItem" id="m59-3W-O39"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hc6-qT-Lh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444" y="-666"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="sm3-CZ-fi3">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xxm-LL-bwU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="meditation" id="beA-Gl-Qap"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2R0-g9-p7E">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="MfR-iR-21t" kind="relationship" relationship="rootViewController" id="5Sq-4b-m0L"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bOX-Hj-ECu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="107" y="-1518"/>
+            <point key="canvasLocation" x="2315.9420289855075" y="-788.16964285714278"/>
         </scene>
         <!--Mood SliderVC-->
         <scene sceneID="SgP-cw-Z8P">
@@ -1084,25 +1029,6 @@ and out as it falls</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oh8-Jp-LB9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="681" y="1098"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="rl2-ny-aoY">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Psm-8i-NfW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="stats" id="FsB-WI-IcV"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y1M-XF-BMK">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="dst-xM-2ku" kind="relationship" relationship="rootViewController" id="JhH-as-D3I"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7mE-ol-r91" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1611" y="-1519"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WjI-UO-wEF">
@@ -1199,13 +1125,31 @@ and out as it falls</string>
             </objects>
             <point key="canvasLocation" x="1610" y="-3015"/>
         </scene>
+        <!--HomeVC-->
+        <scene sceneID="kac-uI-BLn">
+            <objects>
+                <tabBarController storyboardIdentifier="HomeVC" automaticallyAdjustsScrollViewInsets="NO" id="YSF-sb-KQ8" customClass="HomeVC" customModule="Vipassana" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jNL-3t-lgm">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MfR-iR-21t" kind="relationship" relationship="viewControllers" id="geI-Ft-D01"/>
+                        <segue destination="dst-xM-2ku" kind="relationship" relationship="viewControllers" id="oym-fC-jM3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SrR-Wt-VoC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1571" y="-1556"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Image" width="253.33332824707031" height="201"/>
         <image name="back" width="31" height="30"/>
         <image name="backButton" width="25" height="25"/>
         <image name="meditation" width="25" height="25"/>
-        <image name="pause" width="38" height="42"/>
+        <image name="pause" width="100" height="100"/>
         <image name="stats" width="25" height="25"/>
         <image name="timer" width="25" height="25"/>
         <image name="welcome_background" width="3970" height="6297.5"/>

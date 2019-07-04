@@ -34,8 +34,6 @@ class LogInVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func logInButtonPressed(_ sender: UIButton) {
         
-        //SVProgressHUD.show()
-        
         view.endEditing(true)
         
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in

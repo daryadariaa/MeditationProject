@@ -8,8 +8,14 @@
 
 import Foundation
 import Macaw
+import RealmSwift
 
 class MacawChartView: MacawView {
+    
+    static let realm = try! Realm()
+    static var moodValues : Results<Mood>?
+    
+    static var items: [Double] = []
     
     static var lastValues = createData()
     static var data: [Double] = lastValues
@@ -80,15 +86,17 @@ class MacawChartView: MacawView {
     
     
     static func createData() -> [Double] {
-        var items: [Double] = []
-        var moodValueArray = UserDefaults.standard.array(forKey: "ArrayOfMoodValues")  as? [Double] ?? [Double]()
         
-        for i in 0..<moodValueArray.count {
-            let item = moodValueArray[i]
-            items.append(item)
-            palette.append(Color.rgba(r: Int.random(in: 0...255), g: Int.random(in: 0...255), b: Int.random(in: 0...255), a: 0.7))
+        moodValues = realm.objects(Mood.self)
+        
+            for i in 0..<moodValues!.count {
+                let item = Double(moodValues![i].moodValue)
+                items.append(item)
+                palette.append(Color.rgba(r: Int.random(in: 0...255), g: Int.random(in: 0...255), b: Int.random(in: 0...255), a: 0.7))
         }
-        print(items)
+        
         return items.reversed()
+        
+        
     }
 }

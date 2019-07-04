@@ -8,9 +8,8 @@
 
 import UIKit
 import SSCircularSlider
-
-
-var timeArray: [String] = []
+import RealmSwift
+import ChameleonFramework
 
 class MoodSliderVC: UIViewController {
     
@@ -19,19 +18,24 @@ class MoodSliderVC: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var moodLabel: UILabel!
     
+    let realm = try! Realm()
     
     let arrValues: [Int] = [Int](0...10)
     var indexOfValue = 0
     var textOutput = ""
-    var arr: [Int] = [Int]()
-    var array: [Double] = [Double]()
+    var arrayOfValues = [Int]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        moodView.setGradientBackground(colorOne: UIColor(rgb: 0x10C38D), colorTwo: UIColor(rgb: 0x11AAC3))
-        sliderView.setArrayValues(labelValues: arrValues, currentIndex: indexOfValue)
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+        
+        moodView.backgroundColor = UIColor(gradientStyle: .topToBottom, withFrame: moodView.frame, andColors: [(UIColor.flatMint()?.lighten(byPercentage: 100))!, (UIColor.flatMint()?.darken(byPercentage: 100))!])
+        
         sliderView.delegate = self
+        
+        sliderView.setArrayValues(labelValues: arrValues, currentIndex: indexOfValue)
         sliderView.setProgressLayerColor(colors: [UIColor(rgb: 0x3DE267).cgColor, UIColor(rgb: 0x27966A).cgColor])
         label.textColor = UIColor.black
         moodLabel.textColor = UIColor.black
@@ -43,36 +47,34 @@ class MoodSliderVC: UIViewController {
     
     @IBAction func saveButtonTapped(_ sender: UIButton) {
         
-        let moodValue = arr[arr.endIndex - 1]
-        let timestamp = Date().timeIntervalSince1970
-        let time = Date(timeIntervalSince1970: timestamp)
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd MMM HH:mm"
-        let date = formatter.string(from: time)
-        timeArray.append(date.description)
-        array.append(Double(moodValue))
+        let moodValue = arrayOfValues[arrayOfValues.endIndex - 1]
         
+        let currentMood = Mood()
         
+        currentMood.moodValue = moodValue
         
-        let defaults = UserDefaults.standard
-        defaults.set(timeArray, forKey: "ArrayOfDates")
+        currentMood.dateRated = Date()
         
-        defaults.set(array, forKey: "ArrayOfMoodValues")
-        
-        let array = UserDefaults.standard.array(forKey: "ArrayOfDates") ?? [String]()
-        let array_ = UserDefaults.standard.array(forKey: "ArrayOfMoodValues") ?? [Double]()
-        print(array_)
-        print(array)
-        print(moodValue)
+        do {
+            try realm.write {
+                
+                realm.add(currentMood)
+            }
+        }
+        catch {
+            print("Error saving mood value : \(error)")
+        }
     }
+    
 }
 
+//MARK:- Delegate methods
 
 extension MoodSliderVC: SSCircularRingSliderDelegate {
     
     func controlValueUpdated(value: Int) {
         
-        arr.append(value)
+        arrayOfValues.append(value)
         
         switch value {
         case 0..<2 :
@@ -88,7 +90,8 @@ extension MoodSliderVC: SSCircularRingSliderDelegate {
         default:
             return
         }
-        for _ in 0..<arr.count {
+        
+        for _ in 0..<arrayOfValues.count {
             moodLabel.text = textOutput
         }
     }
